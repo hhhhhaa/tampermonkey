@@ -2,7 +2,7 @@
 // @name         淘宝链接缩短
 // @namespace    none
 // @version      2017.05.15
-// @description  淘宝链接缩短
+// @description  淘宝链接精简
 // @author       HungH
 // @match        *.taobao.com/*
 // @match        *.tmall.com/*
