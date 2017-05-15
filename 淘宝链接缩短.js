@@ -9,15 +9,16 @@
 // @grant        unsafeWindow
 // ==/UserScript==
 
-function addbutton(){
+function addbutton(){//添加按钮
     var oD_box=document.createElement("div");
     oD_box.id="oD_box";
-    oD_box.style="position:fixed;top:100px;left:30px;  width:150px; z-index:99999999;";
+    oD_box.style="position:fixed;top:100px;left:30px;  width:150px; z-index:99999999;";//按钮位置
     var oD_button=document.createElement("button");
     oD_button.id="oD_button";
     oD_button.type="button";
-    oD_button.textContent="链接转换";
+    oD_button.textContent="链接转换";//按钮显示文字
     oD_button.style="padding:4px 0;  position: relative;  top:-1px; width:90px; ";
+    //按钮功能-链接转换
     oD_button.onclick=function (){
         function getQueryString(name) {
         var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
@@ -46,6 +47,7 @@ function addbutton(){
     document.body.appendChild(oD_box);
 }
 
+//显示按钮
 (function() {
     addbutton();
 })();
