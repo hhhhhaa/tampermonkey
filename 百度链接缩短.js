@@ -1,18 +1,17 @@
 // ==UserScript==
-// @name         淘宝链接缩短
+// @name         百度链接缩短
 // @namespace    none
 // @version      2017.05.16
-// @description  淘宝链接精简
+// @description  百度链接精简
 // @author       HungH
-// @match        *.taobao.com/*
-// @match        *.tmall.com/*
+// @match        *www.baidu.com/*
 // @grant        unsafeWindow
 // ==/UserScript==
 
 function addbutton(){//添加按钮
     var oD_box=document.createElement("div");
     oD_box.id="oD_box";
-    oD_box.style="position:fixed;top:100px;left:30px;  width:150px; z-index:99999999;";//按钮位置
+    oD_box.style="position:fixed;top:100px;right:30px;  width:150px; z-index:99999999;";//按钮位置
     var oD_button=document.createElement("button");
     oD_button.id="oD_button";
     oD_button.type="button";
@@ -27,14 +26,9 @@ function addbutton(){//添加按钮
         return null;
     }
     var site = window.location.href.match(/^http(s)?:\/\/[^?]*/);
-    var id = getQueryString("id");
-    var q = getQueryString("q");
-    if (id != null) {
-        var pureUrl = site[0] + "?id=" + id;
-    } else if (q != null) {
-        var pureUrl = site[0] + "?q=" + q;
-    } else if (site[0].substr(site[0].length - 13) == "view_shop.htm") {
-        var pureUrl = window.location.protocol + "//" + window.location.host;
+    var wd = getQueryString("wd");
+    if (wd != null) {
+        var pureUrl = site[0] + "?wd=" + wd;
     } else {
         var pureUrl = site[0];
     }
