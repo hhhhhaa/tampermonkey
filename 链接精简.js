@@ -1,12 +1,12 @@
 // ==UserScript==
 // @name         链接精简
 // @namespace    none
-// @version      2017.05.16
+// @version      2017.05.17
 // @description  淘宝、天猫、百度搜索 链接精简
 // @author       HungH
-// @match        *.taobao.com/*
-// @match        *.tmall.com/*
-// @match        *www.baidu.com/*
+// @include      *.taobao.com/*
+// @include      *.tmall.com/*
+// @include      *www.baidu.com/*
 // @grant        unsafeWindow
 // ==/UserScript==
 

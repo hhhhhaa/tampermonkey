@@ -4,8 +4,8 @@
 // @version      2017.05.16
 // @description  淘宝链接精简
 // @author       HungH
-// @match        *.taobao.com/*
-// @match        *.tmall.com/*
+// @include      *.taobao.com/*
+// @include      *.tmall.com/*
 // @grant        unsafeWindow
 // ==/UserScript==
 

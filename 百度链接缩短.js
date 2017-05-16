@@ -4,7 +4,7 @@
 // @version      2017.05.16
 // @description  百度链接精简
 // @author       HungH
-// @match        *www.baidu.com/*
+// @include      *www.baidu.com/*
 // @grant        unsafeWindow
 // ==/UserScript==
 
